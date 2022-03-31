@@ -1,0 +1,391 @@
+.centerAlignment {}
+
+
+/* Swiper */
+.mySwiper {max-width:1320px; margin: 0 auto; margin-bottom: 100px;}
+.mySwiper .swiper-wrapper { position: relative;}
+.mySwiper .swiper-wrapper .swiperMain {
+
+    text-align: center;
+    /* Center slide text vertically  */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; 
+
+}
+.mySwiper .swiper-wrapper .swiperMain figure img {width:100%; display: block;  object-fit: cover;}
+.mySwiper .swiper-wrapper .swiperMain figure div {position: absolute; top:20%; left: 0; width: 100%; text-align: center;}
+.mySwiper .swiper-wrapper .swiperMain figure div h2 {margin-bottom: 10px; font-size: 3em; font-family: 'Roboto', sans-serif; color: black;}
+.mySwiper .swiper-wrapper .swiperMain figure div h2 a {color: black;}
+.mySwiper .swiper-wrapper .swiperMain figure div p{margin-bottom: 20px; color: rgb(0, 0, 0); display: block;  font-size: 16px; line-height:50px; }
+.mySwiper .swiper-wrapper .swiperMain figure div a{border:3px solid black; letter-spacing:2px; display: inline-block; font-family: 'Roboto', sans-serif; line-height:40px; width:150px; color: black;  font-size: 16px; font-weight:bold;}
+.mySwiper .swiper-wrapper .swiperMain figure div a:hover {border:3px solid #7cc7c2; color: #7cc7c2;}
+.swiper-button-next:hover,  .swiper-button-prev:hover {color: #77fdc7;}
+
+
+/* 공통 */
+.commonWork {max-width:1320px; margin: 0 auto;  margin-bottom: 100px; text-align: center;}
+.commonWork h2 {margin-bottom: 40px; font-family: 'Lato', sans-serif; font-size: 32px;display: block; color: black;}
+.fontClass a figure img {width:100%;}
+.fontClass a figure div {margin: 0 6px; text-align: left;}
+.fontClass a figure div::after {visibility: hidden; content: ''; display: block; clear: both; }
+.fontClass a figure div h3 {width: 100%; float: left; margin-bottom: 10px; color: black; font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 900;}
+.fontClass a figure div p {float: left; line-height: 18px; margin-bottom: 10px; font-weight:bold; width: 100%; float: left; color: black; font-family: 'Lato', sans-serif; font-size: 13px;}
+.fontClass a figure div strong {float: left; margin-right: 10px; color: black; font-family: 'Roboto',sans-serif; font-size: 13px;}
+.fontClass a figure div span {width: 100%; float: left; margin-bottom: 10px; color: black; font-family: '굴림', sans-serif; font-size: 12px;}
+.fontClass a figure div s {float: left; color: rgb(102, 102, 102); font-family: 'Roboto',sans-serif; font-size: 12px;}
+.fontClass a figure div mark {float: right; background-color: white; color: red; font-family: 'Roboto',sans-serif; font-size: 16px;}
+
+/* STYLE STORY */
+.styleStory ul {width: calc(100% - 40px); margin: 0 auto; }
+.styleStory ul::after {visibility: hidden; content: ''; clear: both; display: block; }
+.styleStory ul li {float:left; width: 22.6%; margin-right:3%;}
+.styleStory ul li:nth-last-child(1) {margin-right:-3%;}
+.styleStory ul li a figure img{width: 100%; margin-bottom: 20px;}
+.styleStory ul li a figure div{width: calc(100% - 12px); text-align: center;}
+.styleStory ul li a figure div h3{width:100%; line-height: 20px; margin-bottom: 20px; display: block;  font-family: 'Lato', sans-serif;  font-size:18px; color: black;  font-weight: bold;}
+.styleStory ul li a figure div p {line-height: 20px; color: black; font-size: 13px;}
+
+/* 친구 초대 이벤트 */
+.initationEvent {max-width: 1320px; margin: 0 auto; margin-bottom: 100px;}
+.initationEvent::after {visibility: hidden; content: ''; display: block; clear: both;}
+.initationEvent a{float: left; width: 50%;}
+.initationEvent a img {width:100%;}
+
+/* WHATS NEW */
+.whatsNew {width:100%; position: relative; }
+.what-swiper {width: calc(100% - 180px); margin:0 auto; }
+.whatsNew .swiper-wrapper .swiper-slide {
+    margin-right:3.50%; 
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.whatsNew .swiper-wrapper .swiper-slide:nth-child(2n) {max-width:21.25%; }
+.whatsNew .swiper-wrapper .swiper-slide:nth-child(2n+1) {max-width:23.5%;}
+.whatsNew .swiper-wrapper .swiper-slide a figure img {margin-bottom: 20px;}
+.whatsNew .what-next {position: absolute; top: 50%; right: 20px;}
+.whatsNew .what-prev {position: absolute; top: 50%; left: 20px;}
+
+
+/* MAKE IT YOURS */
+.makeIt-yours { width: 100%; position:relative;}
+.makeIt-yours .makeIt-next {position: absolute; bottom: 0; right: 20px;} 
+.makeIt-yours .makeIt-prev {position: absolute; bottom: 0; left: 20px;}
+.makeIt-yours .makeIt {width: calc(100% - 180px); margin: 0 auto;}
+.makeIt-yours .makeIt .swiper-wrapper .swiper-slide {max-width: 13.5%; margin-right:3.50%;}
+.makeIt-yours .makeIt .swiper-wrapper .swiper-slide a figure {width: 100%;}
+.makeIt-yours .makeIt .swiper-wrapper .swiper-slide a figure img {width:100%; margin-bottom: 20px;}
+.makeIt-yours .makeIt .swiper-wrapper .swiper-slide a figure div {margin: 0 6px;}
+
+
+/* EXCLUSIVE + */
+.exclusive { width:calc(100% - 40px); margin: 0 auto 100px auto; position: relative; text-align: center;}
+.exclusive h2 {margin-bottom: 40px; font-family: 'Lato', sans-serif; font-size: 32px;display: block; color: black;}
+.exclusive .exclusive-wrapper { max-width: 1320px; height:400px; margin:0 auto; overflow: hidden; position: relative;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.exclusive .exclusive-wrapper .exclusive-slide {width: 50%;  position: absolute; top: 0;  display: inline-block;}
+.exclusive .exclusive-wrapper .exclusive-slide:nth-child(1) {left: -28%;}
+.exclusive .exclusive-wrapper .exclusive-slide:nth-child(2) {left: 25%;}
+.exclusive .exclusive-wrapper .exclusive-slide:nth-child(3) {left: 78%;}
+.exclusive .exclusive-wrapper .exclusive-slide a {display: inline-block; position: relative;}
+.exclusive .exclusive-wrapper .exclusive-slide a figure img {width: 100%;}
+.exclusive .exclusive-wrapper .exclusive-slide a figure div {width: 100%; position: absolute; color: white; left: 0; top:10px;}
+.exclusive .exclusive-wrapper .exclusive-slide a figure div::after {display: block; content: ''; visibility: hidden; clear: both;}
+.exclusive .exclusive-wrapper .exclusive-slide a figure div span {float: left;  padding: 0 6px; margin-bottom: 16%;}
+.exclusive .exclusive-wrapper .exclusive-slide a figure div h3 {display: inline-block; font-weight: 600; width: 100%; float: none; font-family: 'Lato', sans-serif; font-size: 60px;}
+.exclusive .exclusive-prev {position: absolute; top:50px; left:18%; padding-right: 20px; }
+.exclusive .exclusive-next {position: absolute; top:50px; right:18%; padding-left: 20px;  }
+
+
+/* 인기상품 */
+.popularItem ul{width: calc(100% - 40px); margin: 0 auto;}
+.popularItem ul::after {visibility: hidden; content: ''; display: block; clear: both;}
+.popularItem ul li {width:11.26%; float:left; margin-right: 3.50%;}
+.popularItem ul li:nth-last-child(1) {margin-right: 0;}
+.popularItem ul li a figure img {margin-bottom: 20px;}
+.popularItem ul li a figure div h3 {line-height: 25px;}
+.popularItem ul li a figure div strong {margin-right: 5px;}
+.popularItem ul li a figure div mark {font-size: 14px;}
+
+
+/* BEAUTY PICK */
+
+
+/*큰박스*/
+.beautyPicck {width: calc(100% - 40px); margin: 0 auto 100px auto;}
+.beautyPicck::after {display:block; visibility:hidden; content: ''; clear: both;}
+.beautyPicck .beautyBig {max-width:41.40%; float: left; margin-right: 3.125%;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure {position: relative;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure img {width: 100%;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure div {width: 100%; position: absolute; top:35%; left:0; text-align: center;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure div h3 {font-family:'Lato',sans-serif; font-size:40px; font-weight: 900; color:rgba(255, 255, 255, 0.5); margin-bottom: 20px;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure:hover div h3 {color: white; transition:  0.2s linear 0.2s;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure:hover div p {color: white; transition:  0.4s linear 0.4s;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure:hover div a {color: white; border:3px solid white; transition:  0.6s linear 0.6s;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure div p {margin-bottom: 40px; font-family:'굴림',sans-serif; font-size:13px; color:rgba(255, 255, 255, 0.5);  font-weight: bold;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure div a {padding: 10px; display: inline-block; line-height:30px; border:3px solid rgba(255, 255, 255, 0.5); font-family:'굴림',sans-serif; font-size:13px; color:rgba(255, 255, 255, 0.5);  font-weight: bold;}
+.beautyPicck .beautyBig .swiper-wrapper .swiper-slide figure div a:hover {transform: scale(1.1);}
+.beauty-next,.beauty-prev {color: white;}
+
+/*작은 박스*/
+.beautyPicck .buautySmall {max-width: 55.46%; float: left;}
+.beautyPicck .buautySmall ul::after {display:block; visibility:hidden; content: ''; clear: both;}
+.beautyPicck .buautySmall ul li {position: relative; width:17.74%; height:293px; float: left; margin-right: 2.81%;}
+.beautyPicck .buautySmall ul li:nth-last-child(1) {margin-right: 0;}
+.beautyPicck .buautySmall ul li a figure img {margin-bottom: 10px;}
+.beautyPicck .buautySmall ul li a figure div strong {margin-right: 5px;}
+.beautyPicck .buautySmall ul li a figure div mark {font-size: 14px;}
+.beautyPicck .buautySmall ul li a figure div small {position: absolute; bottom: 0; left: 6px; text-align: center; color: rgb(126, 126, 126); line-height: 13px; border: 1px solid rgb(126, 126, 126); width:25px; font-family: '굴림', sans-serif; font-size: 11px;}
+
+
+/* CONCERT */
+.concert {background-color: black;}
+.concert ul {width: calc(100% - 320px); margin: 0 auto; }
+.concert ul::after {visibility: hidden; content:''; clear: both; display: block;}
+.concert ul li { float: left; width:22%; margin: 60px 4% 60px 0;}
+.concert ul li:nth-child(4) {margin-right: 0;}
+.concert ul li figure img {width: 100%; margin-bottom: 20px;}
+.concert ul li figure div::after {visibility: hidden; display: block; clear: both; display: block;}
+.concert ul li figure div h3{float: left; margin-bottom: 10px; font-family: 'Lato', sans-serif;  color:white; font-size: 14px;font-weight: bold;}
+.concert ul li figure div p {float: left; margin-bottom: 40px; font-family: '굴림', sans-serif; font-size: 13px; color: white;}
+.concert ul li figure div a {float: left; font-family: 'Lato', sans-serif;  font-size: 13px; color: white;}
+
+
+/*various products*/
+.variousProducts {width:calc(100% - 40px); margin: 0 auto;}
+.variousProducts section {width: 100%;}
+.variousProducts section::after {visibility: hidden; clear: both; display: block; content:'';}
+.variousProducts section .variousName { width: calc(15.15% - 40px); float: left; text-align: right;}
+.variousProducts section .variousName h2 {font-size: 28px;}
+.variousProducts section .variousName a {color: black; font-size:13px;  font-family: 'Lato', sans-serif;}
+.variousProducts section .variousName a:hover {color: tomato;}
+.variousProducts section ul {float: right; max-width: 84.84%;}
+.variousProducts section ul::after {visibility: hidden; clear: both; display: block; content:'';}
+.variousProducts section ul li {width:15.17%; margin-right:1.78%; float: left;}
+.variousProducts section ul li:nth-last-child(1) {margin-right:0%;}
+.variousProducts section ul li a figure img {width: 100%; margin-bottom: 10px;}
+
+
+
+/* WDNA STYLE */
+.wdnaStyle {width: 100%;}
+.wdnaStyle nav { margin-bottom: 40px; display: inline-block; position: relative;}
+.wdnaStyle nav::after {visibility: hidden; content:''; clear: both; display: block;}
+.wdnaStyle nav .tabs-li {font-size:16px; text-decoration: none;  font-family: 'Lato', sans-serif; float: left; font-weight:800; color:#919191;  padding: 10px 20px;}
+.wdnaStyle nav .tabs-li:hover, .wdnaStyle nav .tabs-li.active {color: black; transition: 0.5s;}
+#horizontal-underline{position: absolute; left:0; height: 4px; width: 15%; border-radius: 3px; transition: 0.5s; background-color: black; top:35px;}
+#horizontal-underline:hover {position: absolute; left:0; height: 4px; width: 0; border-radius: 3px; transition: 0.5s; background-color: black;top:35px;}
+.wdnaStyle .wdnaStyle_box {width: 100%;}
+.wdnaStyle .wdnaStyle_box ul::after {visibility: hidden; content:''; clear: both; display: block;}
+.wdnaStyle .wdnaStyle_box ul {width: 100%; display: inline-block; margin: 0;}
+.wdnaStyle .wdnaStyle_box ul li {overflow: hidden; width: 13.63%; float: left; margin: 0 1.51% 20px 1.51%; }
+.wdnaStyle .wdnaStyle_box ul li.active {display: block; }
+.wdnaStyle .wdnaStyle_box ul li a img {width: 100%; margin-left: -20px; margin-bottom: -10px;}
+
+
+
+
+/* DISCOUNT OFFER */
+.discountOffer { max-width: 1320px; margin: 0 auto; background-color:#efefef; margin-bottom: 100px;}
+.discountOffer ul {width:calc(100% - 80px); margin: 0 auto;}
+.discountOffer ul::after {visibility: hidden; display: block; content:''; clear: both;}
+.discountOffer ul li {width:33%; float:left; margin: 40px 0; }
+.discountOffer ul li figure img {float: left; width: 20%; }
+.discountOffer ul li:nth-child(3) figure img {width: 16%;} 
+.discountOffer ul li figure div {float: left; margin-left:40px;}
+.discountOffer ul li figure div p {font-family: 'Lato', sans-serif; font-size: 18px; font-weight: bold; color:#7c7c7c;}
+.discountOffer ul li figure div a {margin-top: 20px; display: block; font-family: 'Lato', sans-serif; font-size: 16px; font-weight: bold; color:#7c7c7c;}
+.discountOffer ul li:nth-child(3) div p {margin-top: 10px;}
+.discountOffer ul li div a span {margin-left: 10px;}
+
+
+
+
+/* whatsNew */
+.newsBox {max-width:1280px;  margin: 0 auto 100px auto;}
+.newsBox::after {visibility:hidden; content:''; clear: both; display: block;}
+/* NEWS */
+.newsBox .newsBox01 {float:left; width:48.78%; margin-right: 3%;}
+.newsBox .newsBox01 .newsBox01_ul {width: 100%; margin-bottom: 10px; border-bottom: 3px solid black; display: inline-block;} 
+.newsBox .newsBox01 .newsBox01_ul::after {visibility:hidden; content:''; clear: both; display: block;}
+.newsBox .newsBox01 .newsBox01_ul a {color:#919191; float: left; margin-bottom: 10px; margin-right:6.22%; font-size:23px; font-family: 'Lato', sans-serif; font-weight: bold;}
+.newsBox .newsBox01 .newsBox01_ul a.active , .newsBox .newsBox01 .newsBox01_ul a:hover {color: black;}
+
+.newsBox .newsBox01 .New2-12 {width: 100%; height: 180px; position: relative; display:inline-block;}
+.newsBox .newsBox01 .New2-12 ul {width:100%; position: absolute; top:0; left:0;  background-color: white;}
+.newsBox .newsBox01 .New2-12 ul li {width: calc(100% - 12px); margin: 0 auto; }
+.newsBox .newsBox01 .New2-12 ul li::after {visibility: hidden; content: ''; display: block; clear: both;}
+.newsBox .newsBox01 .New2-12 ul li a {width: 100%; display: inline-block; padding: 10px 0; }
+.newsBox .newsBox01 .New2-12 ul li:hover a p, .newsBox .newsBox01 .New2-12 ul li:hover a time {color: red;}
+.newsBox .newsBox01 .New2-12 ul li a p {float: left; color:black; font-size:13px; font-family: 'Lato', sans-serif;}
+.newsBox .newsBox01 .New2-12 ul li a time {float: right;  color:black; font-size:13px; font-family: 'Lato', sans-serif;}
+.newsBox .newsBox01 .New2-12 .news01 {z-index: 10;}
+
+
+
+.newsBox .serviceCenter {float: right; width:30%;}
+.newsBox .serviceCenter h3 {font-size:23px; margin-bottom: 20px; font-family: 'Lato', sans-serif; color: black;}
+.newsBox .serviceCenter strong {margin-left: 10%;}
+.newsBox .serviceCenter p {width: 100%; margin-bottom: 20px; font-size:14px; font-family: 'Lato', sans-serif; color: black;}
+.newsBox .serviceCenter p b {font-weight: bold;}
+.newsBox .serviceCenter span {width:100%; display: block;  margin-bottom:40px; font-size:14px; font-family: 'Lato', sans-serif; color: black;}
+.newsBox .serviceCenter div {width: 100%;}
+.newsBox .serviceCenter div::after {visibility: hidden; clear: both; content: ''; display: block;}
+.newsBox .serviceCenter div .faq {float: left; color: black; width:25%; line-height: 40px; text-align: center; display: block; border: 1px solid black;}
+.newsBox .serviceCenter div .faq:nth-child(1) {margin-right:5%;}
+.newsBox .serviceCenter div ul {width:34%; float:right;}
+.newsBox .serviceCenter div ul::after {visibility: hidden; clear: both; content: ''; display: block;}
+.newsBox .serviceCenter div ul li {float: left; margin-right: 2.52%; margin-top: 5px;}
+.newsBox .serviceCenter div ul li:nth-last-child(1) {margin-right: 0%;}
+
+
+
+/* 타블렛 */
+@media screen and (max-width:1024px) {
+   /* Swiper */
+   .mySwiper .swiper-wrapper .swiperMain figure img {width: 100%; display: block;  object-fit: cover;}
+   .mySwiper .swiper-wrapper .swiperMain figure div {position: absolute; top:20%; left: 0; width: 100%; text-align: center;}
+   .mySwiper .swiper-wrapper .swiperMain figure div h2 {margin-bottom:10px; font-size: 2.5em; font-family: 'Roboto', sans-serif; color: black;}
+   .mySwiper .swiper-wrapper .swiperMain figure div h2 a {color: black;}
+   .mySwiper .swiper-wrapper .swiperMain figure div p{margin-bottom:15px; color: rgb(0, 0, 0); display: block;  font-size:15px; line-height:50px; }
+   .mySwiper .swiper-wrapper .swiperMain figure div a{border:3px solid black; letter-spacing:2px; display: inline-block; font-family: 'Roboto', sans-serif; line-height:40px; width:130px; color: black;  font-size:14px; font-weight:bold; transition: all 0.3s ease-in 0.3s;}
+   .mySwiper .swiper-wrapper .swiperMain figure div a:hover {border:3px solid #7cc7c2; color: #7cc7c2;}
+
+
+
+   /* 공통 */
+   .commonWork h2 {margin-bottom: 40px; font-family: 'Lato', sans-serif; font-size:30px; display: block; color: black;}
+   .fontClass a figure div {margin: 0 6px; text-align: left;}
+   .fontClass a figure div h3 {width: 100%; float: left; margin-bottom:5px; color: black; font-family: 'Lato', sans-serif; font-size:14px; font-weight: 900;}
+   .fontClass a figure div p {float: left; line-height:20px; margin-bottom:5px; font-weight:bold; width: 100%; float: left; color: black; font-family: 'Lato', sans-serif; font-size: 13px;}
+   .fontClass a figure div strong {float: left; margin-bottom: 5px; margin-right: 10px; color: black; font-family: 'Roboto',sans-serif; font-size: 13px;}
+   .fontClass a figure div span {display: none;}
+   .fontClass a figure div s {float: left; margin-bottom: 5px;  color: rgb(102, 102, 102); font-family: 'Roboto',sans-serif; font-size: 12px;}
+   .fontClass a figure div mark {width: 100%;  float: left; background-color: white; color: red; font-family: 'Roboto',sans-serif; font-size: 16px;}
+
+
+   /* STYLE STORY */
+   .styleStory ul {width: calc(100% - 40px); margin: 0 auto;}
+   .styleStory ul::after {visibility: hidden; content: ''; clear: both; display: block; }
+   .styleStory ul li {float:left; width: 22.6%; margin-right:3%;}
+   .styleStory ul li:nth-last-child(1) {margin-right:-3%;}
+   .styleStory ul li a figure img{width: 100%; margin-bottom: 20px;}
+   .styleStory ul li a figure div{width: calc(100% - 12px); text-align: center;}
+   .styleStory ul li a figure div h3{width:100%; margin-bottom: 20px; display: block;  font-family: 'Lato', sans-serif;  font-size:18px; color: black;  font-weight: bold;}
+   .styleStory ul li a figure div p {display: none;}
+
+
+
+
+   /* 인기상품 */
+  .popularItem ul{width: calc(100% - 40px); margin: 0 auto;}
+  .popularItem ul::after {visibility: hidden; content: ''; display: block; clear: both;}
+  .popularItem ul li {width:17.2%; float:left; margin-right: 3.50%;}
+  .popularItem ul li:nth-last-child(1) {display: none;}
+  .popularItem ul li:nth-last-child(2) {display: none;}
+  .popularItem ul li:nth-last-child(3) {margin-right: 0;}
+  .popularItem ul li a figure div h3 {font-size: 16px; text-align: center;}
+  .popularItem ul li a figure div h3 a {width: 100%; }
+  .popularItem ul li a figure div p {display: none;}
+  .popularItem ul li a figure div strong {display: none;}
+  .popularItem ul li a figure div s {display: none;}
+  .popularItem ul li a figure div mark {display: none;}
+  
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    /* Swiper */
+   .mySwiper .swiper-wrapper .swiperMain figure img {width: 100%; display: block;  object-fit: cover;}
+   .mySwiper .swiper-wrapper .swiperMain figure div {position: absolute; top:15%; left: 0; width: 100%; text-align: center;}
+   .mySwiper .swiper-wrapper .swiperMain figure div h2 {margin-bottom:3px; font-size: 2.0em; font-family: 'Roboto', sans-serif; color: black;}
+   .mySwiper .swiper-wrapper .swiperMain figure div h2 a {color: black;}
+   .mySwiper .swiper-wrapper .swiperMain figure div p{margin-bottom:5px; color: rgb(0, 0, 0); display: block;  font-size:14px; line-height:50px; }
+   .mySwiper .swiper-wrapper .swiperMain figure div a{border:2px solid black; letter-spacing:2px; display: inline-block; font-family: 'Roboto', sans-serif; line-height:30px; width:110px; color: black;  font-size:14px; font-weight:bold; transition: all 0.3s ease-in 0.3s;}
+   .mySwiper .swiper-wrapper .swiperMain figure div a:hover {border:2px solid #7cc7c2; color: #7cc7c2;}
+
+
+   /* 공통 */
+   .commonWork h2 {margin-bottom: 40px; font-family: 'Lato', sans-serif; font-size:28px; display: block; color: black;}
+   .fontClass a figure div {margin: 0 6px; text-align: left;}
+   .fontClass a figure div h3 {width: 100%; float: left; margin-bottom:5px; color: black; font-family: 'Lato', sans-serif; font-size:14px; font-weight: 900;}
+   .fontClass a figure div p {float: left; line-height:20px; margin-bottom:5px; font-weight:bold; width: 100%; float: left; color: black; font-family: 'Lato', sans-serif; font-size: 13px;}
+   .fontClass a figure div strong {float: left; margin-bottom: 5px; margin-right: 10px; color: black; font-family: 'Roboto',sans-serif; font-size: 13px;}
+   .fontClass a figure div span {display: none;}
+   .fontClass a figure div s {float: left; margin-bottom: 5px;  color: rgb(102, 102, 102); font-family: 'Roboto',sans-serif; font-size: 12px;}
+   .fontClass a figure div mark {width: 100%;  float: left; background-color: white; color: red; font-family: 'Roboto',sans-serif; font-size: 16px;}
+ 
+
+   /* STYLE STORY */
+   .styleStory ul {width: calc(100% - 40px); margin: 0 auto;}
+   .styleStory ul::after {visibility: hidden; content: ''; clear: both; display: block; }
+   .styleStory ul li {float:left; width: 31%; margin-right:3%; }
+   .styleStory ul li:nth-last-child(1) {margin-right:-3%; display: none;}
+   .styleStory ul li:nth-last-child(2) {margin-right:-3%;}
+   .styleStory ul li a figure img{width: 100%; margin-bottom: 20px;}
+   .styleStory ul li a figure div{width: calc(100% - 12px); text-align: center;}
+   .styleStory ul li a figure div h3{width:100%; margin-bottom: 20px; display: block;  font-family: 'Lato', sans-serif;  font-size:18px; color: black;  font-weight: bold;}
+   .styleStory ul li a figure div p {display: none;}
+
+
+   /* 친구 초대 이벤트 */
+   .initationEvent {width: 100%; margin-bottom: 100px;}
+   .initationEvent::after {visibility: hidden; content: ''; display: block; clear: both;}
+   .initationEvent a{float: left; width:100%;}
+   .initationEvent a img {width:100%;}
+
+    /* 인기상품 */
+   .popularItem ul{width: calc(100% - 40px); margin: 0 auto;}
+   .popularItem ul::after {visibility: hidden; content: ''; display: block; clear: both;}
+   .popularItem ul li {width:17.2%; float:left; margin-right: 3.50%;}
+   .popularItem ul li:nth-last-child(1) {display: none;}
+   .popularItem ul li:nth-last-child(2) {display: none;}
+   .popularItem ul li:nth-last-child(3) {margin-right: 0;}
+   .popularItem ul li a figure div h3 {font-size: 16px; text-align: center;}
+   .popularItem ul li a figure div h3 a {width: 100%; }
+   .popularItem ul li a figure div p {display: none;}
+   .popularItem ul li a figure div strong {display: none;}
+   .popularItem ul li a figure div s {display: none;}
+   .popularItem ul li a figure div mark {display: none;}
+
+}
+
+
+
+.swiper-pagination-bullet-active{background-color:#77fdc7;}
+.swiper-button-next, .swiper-button-prev {color:rgba(0, 0, 0, 0.8);}
