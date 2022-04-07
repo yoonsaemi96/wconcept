@@ -1,3 +1,36 @@
+  //햄버거메뉴만들기
+  const button=()=> {
+    const burger = document.querySelector('.burger');
+     burger.addEventListener('click', ()=> {
+ 
+     burger.classList.toggle('toggle');
+     });
+    }
+ 
+     button();
+ 
+     const button2 = function(){
+         const burger = $('.burger');
+         burger.click(function(){
+             burger.toggleClass('toggle');
+         })
+     }
+    
+ 
+ 
+     var Burger = document.querySelector('#Burger');
+     Burger.addEventListener('click', function(event){
+      if(document.querySelector('#navStripe').style.transform === "translateX(200px)") {
+        document.querySelector('#navStripe').style.transform = "translateX(0px)";
+        document.querySelector('#Burger').style.transform = "translateX(0px)";   
+      } else {
+        document.querySelector('#navStripe').style.transform = "translateX(200px)";
+        document.querySelector('#Burger').style.transform = "translateX(210px)";   
+    } 
+     }); 
+  
+  
+  
   // 메인
   $('h2').click(function(){
     alert('페이지가 없습니다.');
@@ -20,6 +53,9 @@
       prevEl: ".swiper-button-prev",
     },
   });
+ 
+
+  
 
 
     // WHATS NEW
@@ -35,7 +71,7 @@
     });
 
     // MAKE IT YOURS
-     var swiper = new Swiper(".makeIt", {
+     var make = new Swiper(".makeIt", {
        slidesPerView: 6,
        spaceBetween: 40,
        slidesPerGroup: 1,
@@ -45,6 +81,32 @@
          prevEl: ".makeIt-prev",
        },
     });
+
+    var swiper = new Swiper(".exclusive", {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".exclusive_pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".exclusive_next",
+        prevEl: ".exclusive_prev",
+      },
+    });
+
+
+    // EXCLUSIVE + 
+    $('.exclusive div .exclusive-prev').click(function(){
+       alert('사용이 불가합니다.')
+    });
+
+    $('.exclusive div .exclusive-next').click(function(){
+      alert('사용이 불가합니다.')
+   });
 
 
     //BEAUTY PICK
@@ -95,6 +157,13 @@
           horizontalIndicator(e.currentTarget)
         )
       );
+
+
+
+
+
+
+     
 
     
 

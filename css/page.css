@@ -99,35 +99,25 @@
 
 
 /* EXCLUSIVE + */
-.exclusive { width:calc(100% - 40px); margin: 0 auto 100px auto; position: relative; text-align: center;}
+.exclusive { width:calc(100% - 40px); margin: 0 auto; margin-bottom: 100px; text-align: center; position: relative;}
 .exclusive h2 {margin-bottom: 40px; font-family: 'Lato', sans-serif; font-size: 32px;display: block; color: black;}
-.exclusive .exclusive-wrapper { max-width: 1320px; height:400px; margin:0 auto; overflow: hidden; position: relative;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-.exclusive .exclusive-wrapper .exclusive-slide {width: 50%;  position: absolute; top: 0;  display: inline-block;}
-.exclusive .exclusive-wrapper .exclusive-slide:nth-child(1) {left: -28%;}
-.exclusive .exclusive-wrapper .exclusive-slide:nth-child(2) {left: 25%;}
-.exclusive .exclusive-wrapper .exclusive-slide:nth-child(3) {left: 78%;}
-.exclusive .exclusive-wrapper .exclusive-slide a {display: inline-block; position: relative;}
-.exclusive .exclusive-wrapper .exclusive-slide a figure img {width: 100%;}
-.exclusive .exclusive-wrapper .exclusive-slide a figure div {width: 100%; position: absolute; color: white; left: 0; top:10px;}
-.exclusive .exclusive-wrapper .exclusive-slide a figure div::after {display: block; content: ''; visibility: hidden; clear: both;}
-.exclusive .exclusive-wrapper .exclusive-slide a figure div span {float: left;  padding: 0 6px; margin-bottom: 16%;}
-.exclusive .exclusive-wrapper .exclusive-slide a figure div h3 {display: inline-block; font-weight: 600; width: 100%; float: none; font-family: 'Lato', sans-serif; font-size: 60px;}
-.exclusive .exclusive-prev {position: absolute; top:50px; left:18%; padding-right: 20px; }
-.exclusive .exclusive-next {position: absolute; top:50px; right:18%; padding-left: 20px;  }
+.exclusive div {max-width: 1320px; height:400px;  margin:0 auto; overflow: hidden; position: relative;}
+.exclusive div ul {} 
+.exclusive div ul li {width: 50%;  position: absolute; top: 0;  display: inline-block;}
+.exclusive div ul li:nth-child(1) {left: -28%;}
+.exclusive div ul li:nth-child(2) {left: 25%;}
+.exclusive div ul li:nth-child(3) {left: 78%;}     
+.exclusive div ul li a {display: inline-block; position: relative;}
+.exclusive div ul li a figure {}
+.exclusive div ul li a figure img {width: 100%;}
+.exclusive div ul li a figure div {width: 100%; position: absolute; color: white; left: 0; top:10px;}
+.exclusive div ul li a figure div::after {display: block; content: ''; visibility: hidden; clear: both;}
+.exclusive div ul li a figure div span {float: left;  padding: 0 6px; margin-bottom: 16%; }
+.exclusive div ul li a figure div h3 {display: inline-block; font-weight: 600; width: 100%; float: none; font-family: 'Lato', sans-serif; font-size: 60px;}
+.exclusive div div {position: absolute; top: 0%;  height: 100%;}
+.exclusive div .exclusive-prev {left: 17%; padding-left: 20px;}
+.exclusive div .exclusive-next {right:17%; padding-right: 20px;}
+
 
 
 /* 인기상품 */
@@ -235,10 +225,11 @@
 
 
 /* whatsNew */
-.newsBox {max-width:1280px;  margin: 0 auto 100px auto;}
+.newsBox {max-width: 1320px; margin: 0 auto 100px auto;}
 .newsBox::after {visibility:hidden; content:''; clear: both; display: block;}
+
 /* NEWS */
-.newsBox .newsBox01 {float:left; width:48.78%; margin-right: 3%;}
+.newsBox .newsBox01 {float:left; width:48.78%; margin-right: 3%; margin-left: 20px;}
 .newsBox .newsBox01 .newsBox01_ul {width: 100%; margin-bottom: 10px; border-bottom: 3px solid black; display: inline-block;} 
 .newsBox .newsBox01 .newsBox01_ul::after {visibility:hidden; content:''; clear: both; display: block;}
 .newsBox .newsBox01 .newsBox01_ul a {color:#919191; float: left; margin-bottom: 10px; margin-right:6.22%; font-size:23px; font-family: 'Lato', sans-serif; font-weight: bold;}
@@ -256,7 +247,7 @@
 
 
 
-.newsBox .serviceCenter {float: right; width:30%;}
+.newsBox .serviceCenter {float: right; width:30%; margin-right: 20px;}
 .newsBox .serviceCenter h3 {font-size:23px; margin-bottom: 20px; font-family: 'Lato', sans-serif; color: black;}
 .newsBox .serviceCenter strong {margin-left: 10%;}
 .newsBox .serviceCenter p {width: 100%; margin-bottom: 20px; font-size:14px; font-family: 'Lato', sans-serif; color: black;}
@@ -275,6 +266,7 @@
 
 /* 타블렛 */
 @media screen and (max-width:1024px) {
+
    /* Swiper */
    .mySwiper .swiper-wrapper .swiperMain figure img {width: 100%; display: block;  object-fit: cover;}
    .mySwiper .swiper-wrapper .swiperMain figure div {position: absolute; top:20%; left: 0; width: 100%; text-align: center;}
@@ -307,6 +299,26 @@
    .styleStory ul li a figure div h3{width:100%; margin-bottom: 20px; display: block;  font-family: 'Lato', sans-serif;  font-size:18px; color: black;  font-weight: bold;}
    .styleStory ul li a figure div p {display: none;}
 
+    /* 친구 초대 이벤트 */
+    .initationEvent {width: 100%; margin-bottom: 100px;}
+    .initationEvent::after {visibility: hidden; content: ''; display: block; clear: both;}
+    .initationEvent a{float: left; width:100%;}
+    .initationEvent a img {width:100%;}
+
+   /* WHATS NEW */
+   .whatsNew .swiper-slide a figure p {display: none;}
+   .whatsNew .swiper-slide a figure mark {margin-top: 5px;}
+
+   /* MAKE IT YOURS */
+   .makeIt-yours { width: 100%; position:relative;}
+   .makeIt-yours .makeIt-next {position: absolute; bottom: 0; right: 20px;} 
+   .makeIt-yours .makeIt-prev {position: absolute; bottom: 0; left: 20px;}
+   .makeIt-yours .makeIt {width: calc(100% - 180px); margin: 0 auto;}
+   .makeIt-yours .makeIt .swiper-wrapper .swiper-slide {max-width: 13.5%; margin-right:1.75%;}
+   .makeIt-yours .makeIt .swiper-wrapper .swiper-slide a figure {width: 100%;}
+   .makeIt-yours .makeIt .swiper-wrapper .swiper-slide a figure img {width:100%; margin-bottom: 20px;}
+   .makeIt-yours .makeIt .swiper-wrapper .swiper-slide a figure div {margin: 0 6px;}
+   .makeIt-yours .makeIt .swiper-wrapper .swiper-slide a figure div p {display: none;}
 
 
 
